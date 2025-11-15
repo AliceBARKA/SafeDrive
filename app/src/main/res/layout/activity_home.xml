@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Bloc Nom + Email -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Nom utilisateur"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Adresse / email"
+            android:textSize="14sp" />
+
+        <!-- Boutons Modifier / Déconnexion -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/editProfileButton"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFA726"
+                android:text="Modifier"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:text="Déconnexion"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Boutons circulaires -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Ligne 1 : Start et Danger -->
+
+            <!-- Ligne 2 : TomTom centré -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="148dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/startButton"
+                    android:layout_width="144dp"
+                    android:layout_height="129dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center"
+                    android:text="Start"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/reportDangerButton"
+                    android:layout_width="142dp"
+                    android:layout_height="131dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center"
+                    android:text="Danger"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tomTomButton"
+                android:layout_width="148dp"
+                android:layout_height="139dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="TomTom"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

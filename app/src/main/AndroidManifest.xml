@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.example.monapplication.ui.theme.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"
+            android:label="Bienvenue"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.monapplication.ui.theme.alertes.ReportDangerActivity" />
+        <activity android:name=".ui.theme.home.DetectionActivity" />
+        <activity android:name=".tomtom.TomTomIncidentsActivity" />
+        <activity android:name=".ui.theme.auth.EditProfileActivity" />
+        <activity android:name=".ui.theme.alertes.EditDangerActivity"/>
+
+        <activity
+            android:name="com.example.monapplication.ui.theme.auth.SignupActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            tools:ignore="MissingClass">
+        </activity>
+
+        <activity
+            android:name="com.example.monapplication.ui.theme.auth.LoginActivity"
+            android:exported="true"
+            android:label="Connexion"
+            android:theme="@style/AppTheme"
+            tools:ignore="MissingClass">
+        </activity>
+
+        <activity
+            android:name="com.example.monapplication.ui.theme.home.HomeActivity"
+            android:exported="true"
+            android:label="Accueil">
+        </activity>
+
+
+        <activity android:name=".alertes.AlertActivity"
+            android:launchMode="singleTop"
+            android:exported="true" />
+
+
+        <receiver android:name="com.example.monapplication.ui.theme.alertes.AlertDismissReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver" />
+
+
+        <service
+            android:name="com.example.monapplication.ui.service.BrakeDetectionService"
+            android:permission="android.permission.BLUETOOTH_ADMIN"
+            android:exported="false" />
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

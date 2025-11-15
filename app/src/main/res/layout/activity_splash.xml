@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="517dp"
+        android:layout_height="347dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="Logo de l'application"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/orange_primary"
+        android:elevation="6dp"
+        android:padding="14dp"
+        android:text="S'inscrire"
+        android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red_primary"
+        android:elevation="6dp"
+        android:padding="14dp"
+        android:text="Se connecter"
+        android:textColor="@color/button_text" />
+</LinearLayout>

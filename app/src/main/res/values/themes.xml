@@ -1,0 +1,19 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#EF6C00</item>
+        <item name="colorPrimaryVariant">#E65100</item>
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Texte blanc -->
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+
+        <!-- Style par défaut pour les boutons -->
+        <item name="buttonStyle">@style/MyOrangeButton</item>
+    </style>
+
+    <style name="MyOrangeButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#EF6C00</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+</resources>

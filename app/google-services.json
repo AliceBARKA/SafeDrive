@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "987743317490",
+    "project_id": "saferide-fa76d",
+    "storage_bucket": "saferide-fa76d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987743317490:android:1ce1638a55f835de3f4f6b",
+        "android_client_info": {
+          "package_name": "com.example.monapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTMczwEcIMnWIKZugf8nPvRPu_F3Uqr9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

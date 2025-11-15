@@ -1,0 +1,20 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorTertiary">#FF0266</color>
+    <color name="background">#FFFFFF</color>
+    <color name="rouge_fonce">#E53935</color>
+    <color name="rouge_clair">#EF9A9A</color>
+    <color name="orange">#FB8C00</color>
+    <color name="orange_clair">#FFCC80</color>
+    <color name="texte_clair">#FFFFFF</color>
+    <color name="splash_bg">#FFF3E0</color> <!-- fond doux orangé -->
+    <color name="orange_primary">#FF6F00</color>
+    <color name="red_primary">#D32F2F</color>
+    <color name="button_text">#FFFFFF</color>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <style name="CircleButton">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:backgroundTint">#EF6C00</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:shape">oval</item>
+    </style>
+
+</resources>
