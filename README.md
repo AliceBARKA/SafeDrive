@@ -1,4 +1,4 @@
-SafeDrive – Application mobile de sécurité routière
+🚗 SAFEDRIVE – Application mobile de sécurité routière
 SafeDrive est une application Android conçue pour améliorer la sécurité routière grâce à la détection de freinage brusque, le signalement de dangers, 
 la consultation de la météo locale, ainsi que la transmission automatique d’alertes aux contacts d’urgence en cas d’incident.
 ![Drive safe  Stay aware  Stay alive](https://github.com/user-attachments/assets/c920d152-b2ea-4d56-95ab-f34383408c56)
