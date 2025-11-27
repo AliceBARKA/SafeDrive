@@ -1,5 +1,9 @@
 SafeDrive – Application mobile de sécurité routière
 
+
+![Drive safe  Stay aware  Stay alive](https://github.com/user-attachments/assets/883c38bf-7ee8-46d5-b00d-2426a5bcc9c1)
+
+
 SafeDrive est une application Android développée en Kotlin, dont l’objectif est d’améliorer la sécurité routière grâce à :
 
 la détection de freinage brusque,
