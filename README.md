@@ -71,10 +71,9 @@ _Toutes les images sont redimensionnées pour limiter l’espace occupé._
   <img src="https://github.com/user-attachments/assets/51527858-d8bb-405e-a232-10c13cacaee7" width="250"/>
   <br/>
   <img src="https://github.com/user-attachments/assets/f6e99279-35ea-49b0-bc68-7a9551b80614" width="250"/>
-  <img src="https://github.com/user-attachments/assets/e87d2305-465e-4ea9-a520-f69df93c1638" width="250"/>
   <img src="https://github.com/user-attachments/assets/8e70ee9e-6bbd-44e6-89d4-261e5e7f9eaa" width="250"/>
-  <br/>
   <img src="https://github.com/user-attachments/assets/86c5c510-dddc-44c2-b512-070dcb329bd0" width="250"/>
+  <br/>
   <img src="https://github.com/user-attachments/assets/e1d63e40-d034-46e2-abb8-daea238253f2" width="250"/>
 </p>
 
@@ -127,31 +126,22 @@ _Toutes les images sont redimensionnées pour limiter l’espace occupé._
 
 ### Lancement du projet 
 
-Ouvrir Android Studio
+-Ouvrir Android Studio
+-file → Open puis sélectionner le dossier du projet
+-Attendre la fin de la configuration Gradle
 
-File → Open puis sélectionner le dossier du projet
+### Exécuter l’application
 
-Attendre la fin de la configuration Gradle
+-sur un émulateur Android, ou
+-sur un smartphone connecté en USB.
 
-Exécuter l’application :
+### Évolutions prévues
+-Appel automatique aux contacts d’urgence ;
+-Historique des événements détectés ;
+-Tracking des trajets et analyse de conduite ;
+-Navigation en temps réel ;
+-Mode spécialisé camionneurs ;
+-Notifications push météo et danger.
 
-sur un émulateur Android, ou
-
-sur un smartphone connecté en USB.
-
-Évolutions prévues
-
-Appel automatique aux contacts d’urgence ;
-
-Historique des événements détectés ;
-
-Tracking des trajets et analyse de conduite ;
-
-Navigation en temps réel ;
-
-Mode spécialisé camionneurs ;
-
-Notifications push météo et danger.
-
-```bash
+### bash
 git clone https://github.com/TON-UTILISATEUR/SafeDrive.git
