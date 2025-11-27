@@ -1,45 +1,53 @@
-🚗 SAFEDRIVE – Application mobile de sécurité routière
+SafeDrive – Application mobile de sécurité routière
 
+SafeDrive est une application Android développée en Kotlin, dont l’objectif est d’améliorer la sécurité routière grâce à :
 
-SafeDrive est une application Android conçue pour améliorer la sécurité routière grâce à la détection de freinage brusque, le signalement de dangers, 
-la consultation de la météo locale, ainsi que la transmission automatique d’alertes aux contacts d’urgence en cas d’incident.
-![Drive safe  Stay aware  Stay alive](https://github.com/user-attachments/assets/c920d152-b2ea-4d56-95ab-f34383408c56)
-Développée en Kotlin, SafeDrive met l’accent sur une interface simple, accessible et adaptée aux conducteurs.
-   |Note : SafeDrive est un projet étudiant et n’est affilié à aucune structure officielle de sécurité routière.
+la détection de freinage brusque,
+
+le signalement de dangers,
+
+la consultation de la météo locale,
+
+l’envoi automatique d’alertes à des contacts d’urgence.
+
+Note : SafeDrive est un projet étudiant et n’est affilié à aucune organisation officielle de sécurité routière.
 
 Fonctionnalités principales
-  Détection automatique d’incidents
+1. Détection automatique d’incidents
 
-Détection d’un freinage brusque grâce à l’accéléromètre du téléphone.
+Analyse de l’accéléromètre pour identifier un freinage brusque.
 
-Affichage d’un écran d’alerte + bouton “Je vais bien”.
+Affichage d’un écran d’alerte avec bouton « Je vais bien ».
 
-Préparation à l’envoi automatique d’une notification à un contact d’urgence.
+Préparation à l’envoi d’une notification à un contact d’urgence.
 
-  Signalement de dangers
+2. Signalement de dangers
 
-Permet aux utilisateurs de signaler eux-mêmes :
+L’utilisateur peut signaler différents événements :
 
 accidents
 
-objets sur la route
+objets ou obstacles sur la route
 
 bouchons
 
 travaux
 
 météo dangereuse
-… ou tout autre danger rencontré.
 
-  Informations météo locales
+autres dangers rencontrés
 
-Récupération et affichage des conditions météo proches de la position actuelle.
+3. Informations météo locales
 
-Calcul de distance (ex: “à 3,2 km”).
+Récupération des conditions météo via API.
 
-Informations détaillées : localisation, coordonnées GPS, description météo.
+Localisation GPS précise.
 
-  Espace utilisateur complet
+Affichage de la distance (ex : 3,2 km) et coordonnées.
+
+Résumé météo + zone géographique.
+
+4. Espace utilisateur
 
 Création de compte
 
@@ -47,115 +55,107 @@ Connexion / déconnexion
 
 Gestion du profil
 
-Deux contacts d’urgence enregistrés au sein du compte
+Possibilité d’enregistrer deux contacts d’urgence
 
-  Interface simple et intuitive
+5. Interface simple et intuitive
 
-Design moderne, coloré et accessible
+Design moderne basé sur Material Design
 
-Boutons larges adaptés à l’utilisation en conduite (STOP / START / DANGER / TOMTOM)
+Boutons larges adaptés à l’usage en conduite
 
-Capture d'écran
-![login png](https://github.com/user-attachments/assets/9eea9d2b-c767-4131-81bd-dd739a01fcce)
-![popp_alerte png](https://github.com/user-attachments/assets/2a736f20-a840-4c68-adc1-f0f6f11cb1c3)
-![detection png](https://github.com/user-attachments/asse![danger png](https://github.com/user-attachments/assets/f6e99279-35ea-49b0-bc68-7a9551b80614)
-![danger png](https://github.com/user-attachments/assets/e87d2305-465e-4ea9-a520-f69df93c1638)
-ts/51527858-d8bb-405e-a232-10c13cacaee7)
-![home png](https://github.com/user-attachments/assets/8e70ee9e-6bbd-44e6-89d4-261e5e7f9eaa)
-![signup png](https://github.com/user-attachments/assets/86c5c510-dddc-44c2-b512-070dcb329bd0)
-![splash png](https://github.com/user-attachments/assets/e1d63e40-d034-46e2-abb8-daea238253f2)
+Navigation fluide et minimaliste
 
+Captures d’écran
+
+Toutes les images sont redimensionnées pour éviter une surcharge visuelle.
+
+<img src="https://github.com/user-attachments/assets/9eea9d2b-c767-4131-81bd-dd739a01fcce" width="300"/> <img src="https://github.com/user-attachments/assets/2a736f20-a840-4c68-adc1-f0f6f11cb1c3" width="300"/> <img src="https://github.com/user-attachments/assets/51527858-d8bb-405e-a232-10c13cacaee7" width="300"/> <img src="https://github.com/user-attachments/assets/f6e99279-35ea-49b0-bc68-7a9551b80614" width="300"/> <img src="https://github.com/user-attachments/assets/e87d2305-465e-4ea9-a520-f69df93c1638" width="300"/> <img src="https://github.com/user-attachments/assets/8e70ee9e-6bbd-44e6-89d4-261e5e7f9eaa" width="300"/> <img src="https://github.com/user-attachments/assets/86c5c510-dddc-44c2-b512-070dcb329bd0" width="300"/> <img src="https://github.com/user-attachments/assets/e1d63e40-d034-46e2-abb8-daea238253f2" width="300"/>
 Modules de l’application
-  Authentification
+Module Authentification
 
 Email + mot de passe
 
-Vérifications des champs
+Vérification des champs
 
-Stockage des données utilisateur
+Stockage sécurisé via Firebase
 
-  Module Sécurité
+Module Sécurité
 
-Sensibilité réglée pour détecter une décélération brusque
+Détection de décélération brusque
 
-Blocage de l’interface jusqu’à confirmation
+Blocage de l’interface en cas d’alerte
 
-Activation d’un compte à rebours (option future)
+Option future : compte à rebours automatique
 
-  Module Météo
+Module Météo
 
-Récupération API
+API externe
 
-Localisation GPS
+GPS FusedLocationProviderClient
 
-Affichage multi-points autour de l’utilisateur
+Informations météo multiples autour de l’utilisateur
 
-  Module Danger
+Module Danger
 
-Formulaire de signalement
+Formulaire intuitif
 
 Récupération de la position
 
-Envoi des informations
+Transmission des informations
 
-  
-  Technologies utilisées
-  
+Technologies utilisées
+
 Kotlin – Développement Android natif
 
-FusedLocationProviderClient – Récupération GPS précise
+FusedLocationProviderClient – Géolocalisation
 
-API TomTom – Informations routières et points d’intérêt
+API TomTom – Informations routières et POI
 
-Firebase Authentication – Inscription / connexion utilisateur
+Firebase Authentication
 
-Firebase Realtime Database (ou Firestore selon ton projet) – Stockage des alertes et profils
+Firebase Realtime Database / Firestore
 
-Capteurs du téléphone (accéléromètre) – Détection de freinage brusque
+Accéléromètre – Détection d’incidents
 
-Material Design – Interface simple et ergonomique
+Material Design – Interface ergonomique
 
-Installation & Exécution (Développeurs)
-🔧 Prérequis
+Installation & Exécution
+Prérequis
 
 Android Studio Flamingo ou supérieur
 
 JDK 11+
 
-Compte Firebase (si module activé)
+Compte Firebase (optionnel selon modules activés)
 
-Un smartphone ou émulateur Android
+Smartphone ou émulateur Android
 
-  Lancer le projet
-
-Clone le repo
-
+Lancement du projet
 git clone https://github.com/TON-UTILISATEUR/SafeDrive.git
 
 
-Ouvre Android Studio
+Ouvrir Android Studio
 
-File → Open → Sélectionne le dossier du projet
+File → Open → sélectionner le projet
 
-Laisse Gradle s’installer
+Attendre la configuration Gradle
 
-Lance l’application
-→ sur émulateur
-→ ou téléphone en USB
+Exécuter l’application sur :
 
-  Fonctionnalités futures
+émulateur Android
 
--Appel automatique aux contacts d’urgence
+ou smartphone en USB
 
--Historique des événements détectés
+Évolutions prévues
 
--Tracking des trajets + analyse de conduite
+Appel automatique aux contacts d’urgence
 
--Navigation intégrée en temps réel
+Historique des événements détectés
 
--Mode camionneurs (longueur/hauteur/poids)
+Tracking des trajets et analyse de conduite
 
--Notifications push météo / danger
+Navigation en temps réel
 
+Mode spécialisé camionneurs
 
-
+Notifications météo et danger
