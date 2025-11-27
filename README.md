@@ -126,22 +126,22 @@ _Toutes les images sont redimensionnées pour limiter l’espace occupé._
 
 ### Lancement du projet 
 
--Ouvrir Android Studio
--file → Open puis sélectionner le dossier du projet
--Attendre la fin de la configuration Gradle
+- Ouvrir Android Studio
+- file → Open puis sélectionner le dossier du projet
+- Attendre la fin de la configuration Gradle
 
 ### Exécuter l’application
 
--sur un émulateur Android, ou
--sur un smartphone connecté en USB.
+- sur un émulateur Android, ou
+- sur un smartphone connecté en USB.
 
 ### Évolutions prévues
--Appel automatique aux contacts d’urgence ;
--Historique des événements détectés ;
--Tracking des trajets et analyse de conduite ;
--Navigation en temps réel ;
--Mode spécialisé camionneurs ;
--Notifications push météo et danger.
+- Appel automatique aux contacts d’urgence ;
+- Historique des événements détectés ;
+- Tracking des trajets et analyse de conduite ;
+- Navigation en temps réel ;
+- Mode spécialisé camionneurs ;
+- Notifications push météo et danger.
 
 ### bash
 git clone https://github.com/TON-UTILISATEUR/SafeDrive.git
